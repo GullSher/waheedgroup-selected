@@ -1,0 +1,63 @@
+  /* body {
+      background: -webkit-gradient(linear, left top, left bottom, from(pink), to(beige)) fixed;
+  } */
+
+  /* entire container, keeps perspective */
+
+  .flip-container {
+      -webkit-perspective: 1000;
+      background: transparent;
+      margin: 100px auto;
+  }
+
+  /* flip the picture when hover */
+
+  .flip-container:hover .flipper,
+  .flip-container.hover .flipper {
+      -webkit-transform: rotateY(180deg);
+  }
+
+  .flip-container,
+  .front,
+  .back,
+  img {
+      width: 320px;
+      height: 480px;
+  }
+
+  /* flip speed */
+
+  .flipper {
+      -webkit-transition: 1.5s;
+      -webkit-transform-style: preserve-3d;
+      position: relative;
+  }
+
+  /* hide back  during flip */
+
+  .front,
+  .back {
+      -webkit-backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+
+  /* front placed above back */
+
+  .front {
+      z-index: 2;
+  }
+
+  /* back, initially hidden */
+
+  .back {
+      -webkit-transform: rotateY(180deg);
+      background: rgb(218, 138, 138);
+  }
+
+
+  /* ================================= */
+  .card1 {
+      background-color: antiquewhite;
+  }
