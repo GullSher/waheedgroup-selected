@@ -7,7 +7,8 @@
   .flip-container {
       -webkit-perspective: 1000;
       background: transparent;
-      margin: 100px auto;
+      margin: 5px 5px;
+      /* margin: 100px auto; */
   }
 
   /* flip the picture when hover */
@@ -15,6 +16,7 @@
   .flip-container:hover .flipper,
   .flip-container.hover .flipper {
       -webkit-transform: rotateY(180deg);
+      /* -webkit-transform: rotateX(180deg); */
   }
 
   .flip-container,
