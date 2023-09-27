@@ -1677,11 +1677,12 @@ img.tp-slider-alternative-image {
 }
 
 .tparrows.tp-leftarrow:before {
-    content: '\e64a'
+    /* content: '\e64a' */
 }
 
 .tparrows.tp-rightarrow:before {
-    content: '\e649'
+    /* content: '\e649' */
+    
 }
 
 body.rtl .tp-kbimg {
